@@ -3,31 +3,311 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ronzal — gestión de hípicas</title>
-<meta name="description" content="Ronzal: los caballos, sus cuidados, el trabajo del día, las clases y las cuentas de tu hípica, en el móvil.">
-<link rel="stylesheet" href="estilo.css">
+<title>Ronzal · Gestión de hípicas en el móvil</title>
+<meta name="description" content="Los caballos, sus cuidados, el trabajo de cada turno, las clases y las cuentas de tu hípica, en el móvil de todo el equipo. Y cada propietario recibe el parte de su caballo.">
+<meta name="theme-color" content="#0f3d2e">
+<link rel="icon" href="img/icono-192.png">
+<link rel="apple-touch-icon" href="img/icono-192.png">
+<meta property="og:title" content="Ronzal · Tu hípica, en orden">
+<meta property="og:description" content="Caballos, cuidados, turnos, clases y cuentas de tu hípica, en el móvil de todo el equipo.">
+<meta property="og:image" content="https://samuelgonzrojas.github.io/ronzal-web/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="portada.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <div class="marca">Ronzal</div>
-  <div class="lema">Tu hípica, en orden</div>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <a class="marca" href="./"><img src="img/icono-192.png" alt=""><span>Ronzal</span></a>
+    <nav>
+      <a class="opcional" href="#funciones">Qué hace</a>
+      <a class="opcional" href="#equipo">Para quién</a>
+      <a class="opcional" href="#preguntas">Preguntas</a>
+      <a class="boton pequeno" href="#empezar">Empezar</a>
+    </nav>
+  </div>
 </header>
-<main>
-<h1>Gestión de hípicas en el móvil</h1>
-<p>Ronzal ayuda a llevar una hípica sin papeles ni pizarras:</p>
-<ul>
-  <li>El tablero del día por turnos: comida, medicación, salidas y tareas, listo para marcar con una mano.</li>
-  <li>El semáforo de cuidados: vacunas, herrador, desparasitaciones y dentista de cada caballo.</li>
-  <li>Incidencias y un parte diario con fotos para cada propietario.</li>
-  <li>La agenda de clases, con asistencia y bonos que descuentan solos.</li>
-  <li>La tarifa y las cuentas del mes: qué ha pagado cada uno y qué queda pendiente.</li>
-</ul>
-<p>Para iPhone y Android. Se puede probar con una hípica de ejemplo, sin cuenta.</p>
-<p>Contacto: <a href="mailto:samuelgonzrojas@gmail.com">samuelgonzrojas@gmail.com</a></p>
-</main>
-<footer>
-  <a href="privacidad.html">Privacidad</a>
-  <a href="borrar-cuenta.html">Borrar la cuenta</a>
+
+<section class="portada">
+  <div class="envoltura">
+    <div>
+      <span class="antetitulo">Para hípicas y centros ecuestres</span>
+      <h1>Tu hípica, en&nbsp;orden.</h1>
+      <p class="entrada">Los caballos, sus cuidados, el trabajo de cada turno, las clases y las cuentas del mes, en el móvil de todo el equipo. Y cada propietario recibe el parte de su caballo.</p>
+      <div class="acciones">
+        <a class="boton" href="mailto:samuelgonzrojas@gmail.com?subject=Quiero%20probar%20Ronzal%20en%20mi%20h%C3%ADpica">Quiero probarla en mi hípica</a>
+        <a class="boton fantasma" href="#funciones">Ver qué hace</a>
+      </div>
+      <p class="pronto">Muy pronto en App Store y Google Play, para iPhone y Android.</p>
+    </div>
+    <div class="moviles" aria-hidden="true">
+      <div class="movil"><img src="img/2-clases.jpg" alt=""></div>
+      <div class="movil"><img src="img/1-hoy.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="franja">
+  <div class="envoltura">
+    <ul>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <span><b>Adiós a la pizarra</b>Lo de cada turno, en el móvil.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.8-3.2 3-5 5.5-5s4.7 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.4c2.5-.4 4.4 1.1 5 4.6"/></svg>
+        <span><b>Cada uno, lo suyo</b>Encargado, instructor, mozo y propietario.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span><b>Datos en la UE</b>Con permisos por hípica y por papel.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 1 12-5"/><path d="M19 12a7 7 0 0 1-12 5"/><path d="M17 3v4h-4M7 21v-4h4"/></svg>
+        <span><b>Todos a la vez</b>Lo que marca un compañero se ve al momento.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="funciones" class="seccion">
+  <div class="envoltura">
+    <div class="cabeza aparece">
+      <span class="antetitulo">Qué hace</span>
+      <h2>Lo que pasa en la cuadra, apuntado una sola vez.</h2>
+      <p>Cada cosa se apunta donde se hace, y a partir de ahí la ve quien la tiene que ver: el tablero del día, el semáforo de cuidados, la agenda o la cuenta del mes.</p>
+    </div>
+
+    <div class="funcion aparece">
+      <div class="texto">
+        <span class="antetitulo">El día, por turnos</span>
+        <h3>Mañana, mediodía, tarde y noche, listo para marcar con una mano.</h3>
+        <p>Comida, medicación, salidas al paddock, caminador y tareas de la hípica, ordenados por turno y por box.</p>
+        <ul>
+          <li>Se abre en el turno que toca, con lo pendiente a la vista.</li>
+          <li>Lo que no se hace pide un motivo, para que nadie se quede con la duda.</li>
+          <li>Cambiar una dieta o un tratamiento no altera los días pasados.</li>
+        </ul>
+      </div>
+      <div class="imagen"><div class="movil"><img src="img/1-hoy.jpg" alt="El tablero de hoy en Ronzal, con las tareas del turno de mañana" loading="lazy"></div></div>
+    </div>
+
+    <div class="funcion al-reves aparece">
+      <div class="texto">
+        <span class="antetitulo">Clases y bonos</span>
+        <h3>La agenda de la semana y los bonos que se descuentan solos.</h3>
+        <p>Apunta una clase y repítela cada semana. Al terminar, marca quién vino, quién avisó y quién faltó.</p>
+        <ul>
+          <li>Venir o faltar sin avisar gasta una clase del bono; avisar, no.</li>
+          <li>Aviso cuando a un alumno le quedan pocas clases o el bono se ha acabado.</li>
+          <li>Sin bono, la clase se cobra suelta en su cuenta del mes.</li>
+        </ul>
+      </div>
+      <div class="imagen doble">
+        <div class="movil"><img src="img/2-clases.jpg" alt="La agenda semanal de clases" loading="lazy"></div>
+        <div class="movil"><img src="img/3-clase.jpg" alt="Una clase con la asistencia de cada alumno y su bono" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="funcion aparece">
+      <div class="texto">
+        <span class="antetitulo">Cuentas del mes</span>
+        <h3>Qué ha pagado cada uno y qué queda pendiente.</h3>
+        <p>Pon la tarifa una vez y Ronzal hace la cuenta de cada propietario y alumno.</p>
+        <ul>
+          <li>Pupilaje según esté el caballo en box, en prado o en los dos, repartido por la parte de cada propietario.</li>
+          <li>Clases sueltas, bonos, cuidados con coste y cualquier otro cargo.</li>
+          <li>Apunta los pagos en efectivo, transferencia o tarjeta. Sin facturas ni papeleo.</li>
+        </ul>
+      </div>
+      <div class="imagen"><div class="movil"><img src="img/4-cuentas.jpg" alt="Las cuentas del mes, con lo cobrado y lo pendiente de cada persona" loading="lazy"></div></div>
+    </div>
+
+    <div class="funcion al-reves aparece">
+      <div class="texto">
+        <span class="antetitulo">El parte del propietario</span>
+        <h3>Cada propietario sabe cómo está su caballo sin tener que llamar.</h3>
+        <p>Lo que ha comido, lo que se ha hecho y lo que no, con un mensaje y fotos del día.</p>
+        <ul>
+          <li>Solo ve sus caballos y lo que la hípica decide compartir.</li>
+          <li>Las fotos se suben sin la ubicación del móvil.</li>
+          <li>Entra con un código que le da la hípica, sin contraseñas.</li>
+        </ul>
+      </div>
+      <div class="imagen"><div class="movil"><img src="img/5-parte.jpg" alt="El parte del día de un caballo, como lo ve su propietario" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion oscura">
+  <div class="envoltura">
+    <div class="cabeza aparece">
+      <span class="antetitulo">Y además</span>
+      <h2>Todo lo que una hípica tiene que tener al día.</h2>
+    </div>
+    <div class="tarjetas">
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="12" cy="18" r="2.2"/></svg></div>
+        <h3>Semáforo de cuidados</h3>
+        <p>Vacunas, herrador, desparasitación y dentista de cada caballo: en rojo lo vencido, en ámbar lo que toca pronto.</p>
+      </div>
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M17 15l2 2 3-3"/></svg></div>
+        <h3>Visitas de una vez</h3>
+        <p>¿Ha venido el herrador a diez caballos? Se apunta una vez y se ponen todos al día, con lo que costó cada uno.</p>
+      </div>
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+        <h3>Incidencias</h3>
+        <p>Un cólico, una herida o una puerta rota, con su gravedad. Las infecciosas quedan marcadas para el libro de explotación.</p>
+      </div>
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"/><circle cx="12" cy="9.5" r="2.5"/><path d="M8 16.5c.8-1.6 2.2-2.5 4-2.5s3.2.9 4 2.5"/></svg></div>
+        <h3>La ficha de cada caballo</h3>
+        <p>Microchip, licencia federativa, box, cama, comida, propietarios con su parte y teléfono para una urgencia.</p>
+      </div>
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V5a2 2 0 0 1 2-2h12v17H7a2 2 0 0 0-2 2"/><path d="M9 7h6M9 11h6"/></svg></div>
+        <h3>Directorio</h3>
+        <p>Veterinarios, herradores, dentistas, fisios, entrenadores y transportistas, a un toque de llamar.</p>
+      </div>
+      <div class="tarjeta aparece">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 8l9 6 9-6"/></svg></div>
+        <h3>Sin contraseñas</h3>
+        <p>Se entra con un código de 6 cifras que llega por correo. Al equipo se le invita por correo; al propietario, con un código.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="equipo" class="seccion">
+  <div class="envoltura">
+    <div class="cabeza aparece">
+      <span class="antetitulo">Para quién</span>
+      <h2>Cada persona ve lo que necesita, y nada más.</h2>
+      <p>Los permisos los aplica la propia base de datos: un mozo no ve las cuentas y un propietario no ve a los demás clientes.</p>
+    </div>
+    <div class="papeles">
+      <div class="papel aparece">
+        <div class="quien">Dueño y encargado</div>
+        <h3>Toda la hípica</h3>
+        <p>Caballos, cuidados, turnos, clases, tarifa, cuentas y equipo.</p>
+      </div>
+      <div class="papel aparece">
+        <div class="quien">Instructor</div>
+        <h3>Sus clases</h3>
+        <p>Apunta clases y alumnos y marca la asistencia. No ve las cuentas.</p>
+      </div>
+      <div class="papel aparece">
+        <div class="quien">Mozo</div>
+        <h3>Su turno</h3>
+        <p>El tablero del día, los caballos y las incidencias, para marcar sobre la marcha.</p>
+      </div>
+      <div class="papel aparece">
+        <div class="quien">Propietario y alumno</div>
+        <h3>Lo suyo</h3>
+        <p>El parte de su caballo, sus próximas clases, su bono y su cuenta del mes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="empezar" class="seccion oscura">
+  <div class="envoltura">
+    <div class="cabeza aparece">
+      <span class="antetitulo">Cómo empezar</span>
+      <h2>En una tarde, la hípica funcionando.</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso aparece">
+        <h3>Crea tu hípica</h3>
+        <p>Entra con tu correo y ponle nombre. Si antes quieres verla por dentro, hay una hípica de ejemplo que se prueba sin cuenta.</p>
+      </div>
+      <div class="paso aparece">
+        <h3>Da de alta caballos y tarifa</h3>
+        <p>Cada caballo con su box, su comida y sus propietarios, y los precios de pupilaje, clases y bonos.</p>
+      </div>
+      <div class="paso aparece">
+        <h3>Invita a tu gente</h3>
+        <p>Al equipo, por correo, cada uno con su papel. A los propietarios, con un código para que vean el parte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas" class="seccion">
+  <div class="envoltura">
+    <div class="cabeza aparece">
+      <span class="antetitulo">Preguntas</span>
+      <h2>Lo que nos suelen preguntar.</h2>
+    </div>
+    <div class="preguntas">
+      <details>
+        <summary>¿Cuánto cuesta?</summary>
+        <p>Ahora mismo es gratis, mientras la estrenamos con las primeras hípicas.</p>
+      </details>
+      <details>
+        <summary>¿Puedo probarla antes de meter mis caballos?</summary>
+        <p>Sí. Al abrir la app, «Ver un ejemplo sin cuenta» te enseña una hípica inventada con caballos, clases y cuentas. Lo que toques ahí se queda en tu móvil.</p>
+      </details>
+      <details>
+        <summary>¿Funciona sin cobertura?</summary>
+        <p>Para guardar hace falta conexión. Si en la cuadra no hay cobertura, la app te avisa y no se pierde nada de lo que ya estaba guardado.</p>
+      </details>
+      <details>
+        <summary>¿Hace facturas?</summary>
+        <p>No. Las cuentas del mes son para saber qué ha pagado cada uno y qué queda pendiente. Si emites facturas, las sigues haciendo como hasta ahora.</p>
+      </details>
+      <details>
+        <summary>¿Dónde están mis datos y quién los ve?</summary>
+        <p>En servidores de la Unión Europea (Irlanda). Solo los ve tu hípica, cada persona según su papel, y nunca otra hípica. Lo cuenta con detalle la <a href="privacidad.html">política de privacidad</a>.</p>
+      </details>
+      <details>
+        <summary>¿Los propietarios ven lo de los demás?</summary>
+        <p>No. Cada propietario y cada alumno ven solo sus caballos, sus clases y su cuenta.</p>
+      </details>
+      <details>
+        <summary>¿En qué móviles funciona?</summary>
+        <p>En iPhone y en Android. Llega muy pronto a App Store y Google Play; si quieres probarla ya en tu hípica, escríbenos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" style="padding-top:0">
+  <div class="envoltura">
+    <div class="llamada aparece">
+      <div>
+        <h2>¿Llevas una hípica?</h2>
+        <p>Escríbenos y te ayudamos a empezar con tus caballos, tu tarifa y tu equipo.</p>
+      </div>
+      <a class="boton" href="mailto:samuelgonzrojas@gmail.com?subject=Quiero%20probar%20Ronzal%20en%20mi%20h%C3%ADpica">Escríbenos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="envoltura">
+    <span>© 2026 Ronzal</span>
+    <nav>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="borrar-cuenta.html">Borrar la cuenta</a>
+      <a href="mailto:samuelgonzrojas@gmail.com">Contacto</a>
+    </nav>
+  </div>
 </footer>
+
+<script>
+  // Las secciones aparecen al llegar a ellas. Sin JavaScript no se ocultan.
+  (function () {
+    var items = document.querySelectorAll('.aparece');
+    if (!('IntersectionObserver' in window)) { items.forEach(function (e) { e.classList.add('visto'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visto'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (e) { io.observe(e); });
+  })();
+</script>
 </body>
 </html>
